@@ -1,7 +1,11 @@
 module.exports = {
     // Stop ESLint from looking for a configuration file in parent folders
     root: true,
-    extends: 'airbnb',
+    extends: [   
+        'airbnb',    
+        'plugin:flowtype/recommended',
+    ], 
+
     // 支持的语法环境
     env: {
         'browser': true,
