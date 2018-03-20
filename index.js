@@ -15,7 +15,6 @@ module.exports = {
 
     plugins: [
         "react",
-        "redux-saga",
         "import",
         "jsx-a11y",
     ],
