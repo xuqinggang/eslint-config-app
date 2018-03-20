@@ -23,6 +23,8 @@
   "homepage": "https://github.com/xuqinggang/eslint-config-xuqinggang#readme",
   "dependencies": {
     "eslint": "^4.19.0",
+    "babel-eslint": "^8.2.2",
+    "eslint-plugin-flowtype": "^2.46.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",

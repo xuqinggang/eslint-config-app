@@ -2,11 +2,13 @@ module.exports = {
     extends: 'airbnb',
     // 支持的语法环境
     env: {
-        "browser": true,
-        "node": true,
-        "mocha": true,
-        "es6": true
+        'browser': true,
+        'node': true,
+        'mocha': true,
+        'es6': true
     },
+
+    parser: 'babel-eslint',
 
     parserOptions: {
         ecmascript: 6,
@@ -14,13 +16,15 @@ module.exports = {
     },
 
     plugins: [
-        "react",
-        "import",
-        "jsx-a11y",
+        'babel',
+        'flowtype',
+        'react',
+        'import',
+        'jsx-a11y',
     ],
 
     rules: {
-        indent: ["error", 4],
+        indent: ['error', 4],
         'react/jsx-indent': ['error', 4],
         // react 属性缩进
         'react/jsx-indent-props': [1, 4],
