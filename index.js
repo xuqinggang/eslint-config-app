@@ -31,6 +31,9 @@ module.exports = {
 
     rules: {
         indent: ['error', 4],
+
+        // react
+        // 缩进
         'react/jsx-indent': ['error', 4],
         // react 属性缩进
         'react/jsx-indent-props': [1, 4],
@@ -42,6 +45,17 @@ module.exports = {
         'react/prop-types': ['error', { ignore: ['dispatch'], customValidators: [] }],
         // Enforce label tags have associated control.
         'jsx-a11y/label-has-for': 'off',
+
+        // regular
+        // 尾随尾号
+        'comma-dangle': ['error', {
+            objects: 'always',
+            arrays: 'never',
+            imports: 'never',
+            exports: 'never',
+            functions: 'ignore',
+        }],
+
         'no-param-reassign': [
             'warn', 
             {
@@ -64,6 +78,6 @@ module.exports = {
 
     // eslint-import-resolver-webpack 让eslint，使用webpack的resolver来检查package是否引用正确
     settings: {
-        "import/resolver": 'webpack',
+        "import/resolver": 'webpack.config.babe.js',
     },
 };
