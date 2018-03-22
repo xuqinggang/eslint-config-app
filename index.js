@@ -55,9 +55,13 @@ module.exports = {
             exports: 'never',
             functions: 'ignore',
         }],
+        // 括号前后一致
+        'function-paren-newline': ['error', 'consistent'],
+        // 允许三元表达式和与或操作符表达式
+        'no-unused-expressions': ['error', { "allowShortCircuit": true, "allowTernary": true }],
 
         'no-param-reassign': [
-            'warn', 
+            'warn',
             {
                 props: true,
                 ignorePropertyModificationsFor: [
