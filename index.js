@@ -43,8 +43,21 @@ module.exports = {
         // Prevent missing React when using JSX
         'react/react-in-jsx-scope': 'off',
         'react/prop-types': ['error', { ignore: ['dispatch'], customValidators: [] }],
+        // 修改react 内部方法属性排序
+        'react/sort-comp': [
+            1,
+            {
+                order: [
+                    'static-methods',
+                    'everything-else',
+                    'lifecycle',
+                    'render',
+                ],
+            },
+        ],
         // Enforce label tags have associated control.
         'jsx-a11y/label-has-for': 'off',
+        'jsx-a11y/anchor-is-valid': 'off',
 
         // regular
         // 尾随逗号
@@ -55,10 +68,15 @@ module.exports = {
             exports: 'always-multiline',
             functions: 'always-multiline',
         }],
+
         // 括号前后一致
         'function-paren-newline': ['error', 'consistent'],
+
         // 允许三元表达式和与或操作符表达式
         'no-unused-expressions': ['error', { allowShortCircuit: true, allowTernary: true }],
+
+        // allaw href="javascript:xxx"
+        'no-script-url': 'off',
 
         'no-param-reassign': [
             'warn',
