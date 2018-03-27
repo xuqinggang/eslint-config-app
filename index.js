@@ -1,17 +1,17 @@
 module.exports = {
     // Stop ESLint from looking for a configuration file in parent folders
     root: true,
-    extends: [   
-        'airbnb',    
+    extends: [
+        'airbnb',
         'plugin:flowtype/recommended',
-    ], 
+    ],
 
     // 支持的语法环境
     env: {
-        'browser': true,
-        'node': true,
-        'mocha': true,
-        'es6': true
+        browser: true,
+        node: true,
+        mocha: true,
+        es6: true,
     },
 
     parser: 'babel-eslint',
@@ -37,28 +37,28 @@ module.exports = {
         'react/jsx-indent': ['error', 4],
         // react 属性缩进
         'react/jsx-indent-props': [1, 4],
-        'react/jsx-filename-extension': ['error', { 'extensions': ['.js'] }],
+        'react/jsx-filename-extension': ['error', { extensions: ['.js'] }],
         // react 禁用数组的index当做组件的key关闭
         'react/no-array-index-key': 'off',
-        // Prevent missing React when using JSX 
+        // Prevent missing React when using JSX
         'react/react-in-jsx-scope': 'off',
         'react/prop-types': ['error', { ignore: ['dispatch'], customValidators: [] }],
         // Enforce label tags have associated control.
         'jsx-a11y/label-has-for': 'off',
 
         // regular
-        // 尾随尾号
+        // 尾随逗号
         'comma-dangle': ['error', {
-            objects: 'always',
-            arrays: 'never',
-            imports: 'never',
-            exports: 'never',
-            functions: 'ignore',
+            objects: 'always-multiline',
+            arrays: 'always-multiline',
+            imports: 'always-multiline',
+            exports: 'always-multiline',
+            functions: 'always-multiline',
         }],
         // 括号前后一致
         'function-paren-newline': ['error', 'consistent'],
         // 允许三元表达式和与或操作符表达式
-        'no-unused-expressions': ['error', { "allowShortCircuit": true, "allowTernary": true }],
+        'no-unused-expressions': ['error', { allowShortCircuit: true, allowTernary: true }],
 
         'no-param-reassign': [
             'warn',
@@ -82,6 +82,10 @@ module.exports = {
 
     // eslint-import-resolver-webpack 让eslint，使用webpack的resolver来检查package是否引用正确
     settings: {
-        "import/resolver": 'webpack.config.babe.js',
+        'import/resolver': {
+            webpack: {
+                config: 'webpack.config.js',
+            },
+        },
     },
 };
