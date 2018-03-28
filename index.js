@@ -49,6 +49,7 @@ module.exports = {
             {
                 order: [
                     'static-methods',
+                    'constructor',
                     'everything-else',
                     'lifecycle',
                     'render',
