@@ -1,11 +1,13 @@
 {
-  "name": "eslint-config-xuqinggang",
+  "name": "eslint-config-app",
   "version": "1.0.9",
   "description": "eslint配置",
   "keywords": [
     "npm",
     "eslint-config",
-    "eslint react es6"
+    "eslint react es6",
+    "esling babel",
+    "esling flow"
   ],
   "main": "index.js",
   "scripts": {
@@ -13,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xuqinggang/eslint-config-xuqinggang.git"
+    "url": "git+https://github.com/xuqinggang/eslint-config-app.git"
   },
   "author": "xuqinggang",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/xuqinggang/eslint-config-xuqinggang/issues"
+    "url": "https://github.com/xuqinggang/eslint-config-app/issues"
   },
-  "homepage": "https://github.com/xuqinggang/eslint-config-xuqinggang#readme",
+  "homepage": "https://github.com/xuqinggang/eslint-config-app#readme",
   "dependencies": {
     "babel-eslint": "^8.2.2",
     "eslint": "^4.19.0",
