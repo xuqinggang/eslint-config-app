@@ -34,7 +34,9 @@ git提供了hook功能,在提交代码(commit)前触发执行脚本
 
 ## 常见问题
 
-### 1.webpack配置了resolve.alias(别名路径解析),会导致eslint如下错误 `unable to resolve to path to module 'xxx'`
+### 1.webpack配置了resolve.alias(别名路径解析),会导致eslint如下错误
+
+`unable to resolve to path to module 'xxx'`
 
 ### 解决办法:
 
