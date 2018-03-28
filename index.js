@@ -54,6 +54,28 @@ module.exports = {
                     'lifecycle',
                     'render',
                 ],
+                groups: {
+                    lifecycle: [
+                        'displayName',
+                        'propTypes',
+                        'contextTypes',
+                        'childContextTypes',
+                        'mixins',
+                        'statics',
+                        'defaultProps',
+                        'getDefaultProps',
+                        'getInitialState',
+                        'state',
+                        'getChildContext',
+                        'componentWillMount',
+                        'componentDidMount',
+                        'componentWillReceiveProps',
+                        'shouldComponentUpdate',
+                        'componentWillUpdate',
+                        'componentDidUpdate',
+                        'componentWillUnmount'
+                    ],
+                }
             },
         ],
         // Enforce label tags have associated control.
