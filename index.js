@@ -73,14 +73,16 @@ module.exports = {
                         'shouldComponentUpdate',
                         'componentWillUpdate',
                         'componentDidUpdate',
-                        'componentWillUnmount'
+                        'componentWillUnmount',
                     ],
-                }
+                },
             },
         ],
         // Enforce label tags have associated control.
         'jsx-a11y/label-has-for': 'off',
         'jsx-a11y/anchor-is-valid': 'off',
+        // import order disable absolute path before relative path
+        'import/first': ['error', 'DISABLE-absolute-first'],
 
         // regular
         // 尾随逗号
@@ -122,11 +124,11 @@ module.exports = {
     },
 
     // eslint-import-resolver-webpack 让eslint，使用webpack的resolver来检查package是否引用正确
-    settings: {
-        'import/resolver': {
-            webpack: {
-                config: 'webpack.config.js',
-            },
-        },
-    },
+    // settings: {
+    //     'import/resolver': {
+    //         webpack: {
+    //             config: 'webpack.config.js',
+    //         },
+    //     },
+    // },
 };
