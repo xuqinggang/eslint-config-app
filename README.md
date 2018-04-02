@@ -62,3 +62,11 @@ settings: {
 [issues-open-img]: https://img.shields.io/github/issues-raw/xuqinggang/eslint-config-app.svg?maxAge=2592000
 [issues-close-img]: https://img.shields.io/github/issues-closed-raw/xuqinggang/eslint-config-app.svg?maxAge=2592000
 [issues-url]: https://github.com/xuqinggang/eslint-config-app/issues
+
+### 2. eslint issue: absolute imports should come before relative 
+
+### 解决办法：
+
+```
+'import/first': ['error', 'DISABLE-absolute-first'],
+```
