@@ -81,8 +81,8 @@ module.exports = {
         // Enforce label tags have associated control.
         'jsx-a11y/label-has-for': 'off',
         'jsx-a11y/anchor-is-valid': 'off',
-        // import order disable absolute path before relative path
         'import/first': ['error', 'DISABLE-absolute-first'],
+        'import/prefer-default-export': 'off',
 
         // regular
         // 尾随逗号
@@ -94,14 +94,28 @@ module.exports = {
             functions: 'always-multiline',
         }],
 
+        // Quoting Style for Property Names
+        'quote-props': [2, 'as-needed', { numbers: true }],
+
+        // enforce variables to be declared either together or separately
+        'one-var': 'off',
+
         // 括号前后一致
         'function-paren-newline': ['error', 'consistent'],
 
         // 允许三元表达式和与或操作符表达式
         'no-unused-expressions': ['error', { allowShortCircuit: true, allowTernary: true }],
 
+        // Disallow Dangling Underscores in Identifiers
+        'no-underscore-dangle': [2, { allowAfterThis: true }],
+
+        // 对象属性是否换行
+        // 'object-curly-newline': ['error', 'never'],
+
         // allaw href="javascript:xxx"
         'no-script-url': 'off',
+
+        'prefer-destructuring': ['error', { object: false, array: false }],
 
         'no-param-reassign': [
             'warn',
