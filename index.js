@@ -50,6 +50,7 @@ module.exports = {
                 order: [
                     'static-methods',
                     'constructor',
+                    'state',
                     'everything-else',
                     'lifecycle',
                     'render',
@@ -65,7 +66,6 @@ module.exports = {
                         'defaultProps',
                         'getDefaultProps',
                         'getInitialState',
-                        'state',
                         'getChildContext',
                         'componentWillMount',
                         'componentDidMount',
