@@ -30,7 +30,7 @@ module.exports = {
     ],
 
     rules: {
-        indent: ['error', 4, { SwitchCase: 2 }],
+        indent: ['error', 4, { SwitchCase: 1 }],
         'max-len': ['error', { code: 120 }],
         'no-use-before-define': ['error', { functions: false, classes: false }],
         // enforce variables to be declared either together or separately

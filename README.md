@@ -56,13 +56,6 @@ settings: {
 
 ```
 
-[npm-url]: https://www.npmjs.com/package/eslint-config-app
-[version-img]: https://img.shields.io/npm/v/eslint-config-app.svg
-[downloads-img]: https://img.shields.io/npm/dt/eslint-config-app.svg
-[issues-open-img]: https://img.shields.io/github/issues-raw/xuqinggang/eslint-config-app.svg?maxAge=2592000
-[issues-close-img]: https://img.shields.io/github/issues-closed-raw/xuqinggang/eslint-config-app.svg?maxAge=2592000
-[issues-url]: https://github.com/xuqinggang/eslint-config-app/issues
-
 ### 2. eslint issue: absolute imports should come before relative 
 
 ### 解决办法：
@@ -70,3 +63,10 @@ settings: {
 ```
 'import/first': ['error', 'DISABLE-absolute-first'],
 ```
+
+[npm-url]: https://www.npmjs.com/package/eslint-config-app
+[version-img]: https://img.shields.io/npm/v/eslint-config-app.svg
+[downloads-img]: https://img.shields.io/npm/dt/eslint-config-app.svg
+[issues-open-img]: https://img.shields.io/github/issues-raw/xuqinggang/eslint-config-app.svg?maxAge=2592000
+[issues-close-img]: https://img.shields.io/github/issues-closed-raw/xuqinggang/eslint-config-app.svg?maxAge=2592000
+[issues-url]: https://github.com/xuqinggang/eslint-config-app/issues
